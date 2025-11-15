@@ -8,7 +8,7 @@ type News = {
     name: string;
   };
   publishedAt: string;
-  creatdAtt: string;
+  createdAt: string;
 };
 
 const data:{contents: News[]} = {
