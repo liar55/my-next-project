@@ -20,9 +20,28 @@ const data:{contents: News[]} = {
         name: "更新情報"
       },
       publishedAt: "2023/05/19",
-      creatdAtt: "2023/05/19"
-  }   
-]}
+      createdAt: "2023/05/19",
+  },
+  {
+     id:"2",
+     title: "当社のCEOが業績リーダーTOP30に選出されました",
+     category: {
+        name: "更新情報",
+      },
+      publishedAt: "2023/05/19",
+      createdAt: "2023/05/19",
+  },
+  {
+     id:"3",
+     title: "テストの記事です",
+      category: {
+        name: "更新情報",
+      },
+      publishedAt: "2023/04/19",
+      createdAt: "2023/04/19",
+  },
+ ],
+};
 
 export default function Home() {
   return (
