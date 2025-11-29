@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 
-import ButtonLink from "@/app/_components/ButtonLink";
+import ButtonLink from "@/app/_components/buttonLink";
 
 type News = {
   id: string;
