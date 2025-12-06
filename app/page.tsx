@@ -43,7 +43,8 @@ export default function Home() {
   const sliceData = data.contents.slice(0,2);
  
   return (
-    <>
+    <main className={styles.main}>
+      <div className={styles.description}>
     <section className={styles.top}>
       <div>
         <h1 className={styles.title}>テクノロジーの力で世界を変える</h1>
@@ -64,6 +65,7 @@ export default function Home() {
           <ButtonLink href="/news">もっと見る</ButtonLink>
         </div>
       </section>
-    </>       
-  );
+      </div>   
+    </main>
+  );  
 }

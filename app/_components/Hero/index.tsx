@@ -4,10 +4,9 @@ import styles from "./index.module.css"
 type Props = {
     title: string;
     sub: string;
-    image: string;
 };
 
-export default function Hero({ title, sub, }: Props) {
+export default function Hero({ title, sub }: Props) {
     return (
         <section className={styles.container}>
             <div>
