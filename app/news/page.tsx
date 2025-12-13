@@ -4,9 +4,14 @@ import Pagination from "@/app/_components/Pagination";
 import { NEWS_LIST_LIMIT } from "@/app/_constans";
 
 export default async function Page() {
-    const { contents:news } = await getNewsList({
+    const { contents:news, totalCount } = await getNewsList({
         limit: NEWS_LIST_LIMIT,
     });
 
-    return <NewsList news={news} />;
+    return (
+        <>
+            <NewsList news={news} />
+            <Pagination totalCount={totalCount} />
+        </>
+    );
 }
