@@ -3,7 +3,7 @@ import Image from "next/image";
 import { getNewsList } from "@/app/_libs/microcms";
 import { TOP_NEWS_LIST_LIMIT } from "@/app/_constans";
 import NewsList from "@/app/_components/NewsList";
-import ButtonLink from "@/app/_components/buttonLink";
+import ButtonLink from "@/app/_components/ButtonLink";
 
 export default async function Home() {
   const data = await getNewsList({ limit: TOP_NEWS_LIST_LIMIT });
