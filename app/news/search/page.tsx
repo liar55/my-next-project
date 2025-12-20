@@ -4,21 +4,21 @@ import NewsList from "@/app/_components/NewsList";
 import SearchField from "@/app/_components/SearchField";
 
 type Props = {
-    serchParams: {
-        q?: string;
-    };
+  searchParams: {
+    q?: string;
+  };
 };
 
-export default async function Page({ serchParams }: Props) {
-    const { contents:news } = await getNewsList({
-        limit: NEWS_LIST_LIMIT,
-        q: serchParams.q,
-    });
+export default async function Page({ searchParams }: Props) {
+  const { contents: news } = await getNewsList({
+    limit: NEWS_LIST_LIMIT,
+    q: searchParams.q,
+  });
 
-    return (
-        <>
-            <SearchField />
-            <NewsList news={news}/>
-        </>
-    );
+  return (
+    <>
+      <SearchField />
+      <NewsList news={news} />
+    </>
+  );
 }
