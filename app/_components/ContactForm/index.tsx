@@ -15,7 +15,7 @@ export default function ContactForm() {
     if (state.status === "success"){
         return (
             <p className={styles.success}>
-                お問い合わせいただき、ありがとうございます
+                お問い合わせいただき、ありがとうございます。
                 <br />
                 お返事まで今しばらくお待ちください。
             </p>
